@@ -600,9 +600,9 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 60rem;
+  max-width: 75vw;
   background-color: #f3f3f3;
-  padding: 5rem 6rem;
+  padding: 2rem 2.5rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: all 0.5s;
@@ -621,7 +621,7 @@ h4 {
 }
 
 .modal__header {
-  font-size: 2.5vw;
+  font-size: 20px;
   margin-bottom: 4.5rem;
   line-height: 1.5;
 }
@@ -635,15 +635,16 @@ h4 {
 }
 
 .modal__form label {
-  font-size: 1.1vw;
+  font-size: 15px;
   font-weight: 500;
 }
 
 .modal__form input {
-  font-size: 1.1vw;
-  padding: 1rem 1.5rem;
+  font-size: 15px;
+  padding: 0.5rem 1rem;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
+  max-width: 60%;
 }
 
 .modal__form button {
@@ -658,7 +659,7 @@ h4 {
   position: absolute;
   top: 0.5rem;
   right: 2rem;
-  font-size: 3vw;
+  font-size: 15px;
   cursor: pointer;
   border: none;
   background: none;
@@ -868,5 +869,21 @@ h4 {
   }
   .testimonial__photo {
     width: 4.5rem;
+  }
+}
+
+/* modal media */
+
+@media (max-width: 550px) {
+  .modal {
+    padding: 0.5rem 0.8rem;
+  }
+  .btn--close-modal {
+    top: 0.3rem;
+    right: 1rem;
+  }
+  .modal__form {
+    gap: 1rem;
+    margin: 0 0.5rem;
   }
 }
