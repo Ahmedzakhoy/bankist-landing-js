@@ -6,7 +6,7 @@ const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseRegistrationWindow = document.querySelector(".btn--close-modal");
 const btnsOpenRegistrationWindow = document.querySelectorAll(".btn--show-modal");
-const btnSrollToInitialVew = document.querySelector(".btn--scroll-to");
+const btnScrollToNextView = document.querySelector(".btn--scroll-to");
 const initialSection = document.querySelector("#section--1");
 const allSections = document.querySelectorAll(".section");
 const tabsContainer = document.querySelector(".operations__tab-container");
@@ -36,7 +36,9 @@ const closeModal = function () {
 };
 
 // Modal window event listeners
-btnsOpenRegistrationWindow.forEach((btn) => btn.addEventListener("click", openModal));
+btnsOpenRegistrationWindow.forEach((btn) =>
+  btn.addEventListener("click", openModal)
+);
 btnCloseRegistrationWindow.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 document.addEventListener("keydown", function (e) {
@@ -47,7 +49,7 @@ document.addEventListener("keydown", function (e) {
 
 ///////////////////////////////////////
 ////button scrolling to initial view
-btnSrollToInitialVew.addEventListener("click", function (event) {
+btnScrollToNextView.addEventListener("click", function (event) {
   initialSection.scrollIntoView({ behavior: "smooth" });
 });
 
