@@ -5,7 +5,8 @@
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseRegistrationWindow = document.querySelector(".btn--close-modal");
-const btnsOpenRegistrationWindow = document.querySelectorAll(".btn--show-modal");
+const btnsOpenRegistrationWindow =
+  document.querySelectorAll(".btn--show-modal");
 const btnScrollToNextView = document.querySelector(".btn--scroll-to");
 const initialSection = document.querySelector("#section--1");
 const allSections = document.querySelectorAll(".section");
@@ -200,8 +201,8 @@ const activateDot = function (slide) {
   const allDotsArray = [...dotsContaier.children];
   allDotsArray.forEach((s) => s.classList.remove("dots__dot--active"));
   document
-  .querySelector(`.dots__dot[data-slide="${slide}"]`)
-  .classList.add("dots__dot--active");
+    .querySelector(`.dots__dot[data-slide="${slide}"]`)
+    .classList.add("dots__dot--active");
 };
 
 //// creating the dots elements function
